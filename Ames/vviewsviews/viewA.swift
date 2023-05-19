@@ -42,7 +42,6 @@ struct viewA: View {
                     .clipShape(Capsule())
             }
         }
-        
         .padding(.horizontal)
         .padding(.top, 10)
         .foregroundColor(.white)
