@@ -15,6 +15,7 @@
 		85B744792A0E4B2300939A2C /* viewB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B744782A0E4B2300939A2C /* viewB.swift */; };
 		85B7447B2A0E4B3300939A2C /* viewC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B7447A2A0E4B3300939A2C /* viewC.swift */; };
 		85B7447D2A0E4E6800939A2C /* viewD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B7447C2A0E4E6800939A2C /* viewD.swift */; };
+		85EC17A92A1639A800A94561 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EC17A82A1639A800A94561 /* Reminder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		85B744782A0E4B2300939A2C /* viewB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewB.swift; sourceTree = "<group>"; };
 		85B7447A2A0E4B3300939A2C /* viewC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewC.swift; sourceTree = "<group>"; };
 		85B7447C2A0E4E6800939A2C /* viewD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewD.swift; sourceTree = "<group>"; };
+		85EC17A82A1639A800A94561 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,11 +61,12 @@
 		85B744662A0E481500939A2C /* Ames */ = {
 			isa = PBXGroup;
 			children = (
-				85B744752A0E4AC900939A2C /* vviews */,
+				85B744752A0E4AC900939A2C /* vviewsviews */,
 				85B744672A0E481500939A2C /* AmesApp.swift */,
 				85B744692A0E481500939A2C /* ContentView.swift */,
 				85B7446B2A0E481700939A2C /* Assets.xcassets */,
 				85B7446D2A0E481700939A2C /* Preview Content */,
+				85EC17A82A1639A800A94561 /* Reminder.swift */,
 			);
 			path = Ames;
 			sourceTree = "<group>";
@@ -76,7 +79,7 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		85B744752A0E4AC900939A2C /* vviews */ = {
+		85B744752A0E4AC900939A2C /* vviewsviews */ = {
 			isa = PBXGroup;
 			children = (
 				85B7447C2A0E4E6800939A2C /* viewD.swift */,
@@ -84,7 +87,7 @@
 				85B744782A0E4B2300939A2C /* viewB.swift */,
 				85B7447A2A0E4B3300939A2C /* viewC.swift */,
 			);
-			path = vviews;
+			path = vviewsviews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +165,7 @@
 				85B7447B2A0E4B3300939A2C /* viewC.swift in Sources */,
 				85B744772A0E4B1100939A2C /* viewA.swift in Sources */,
 				85B744682A0E481500939A2C /* AmesApp.swift in Sources */,
+				85EC17A92A1639A800A94561 /* Reminder.swift in Sources */,
 				85B744792A0E4B2300939A2C /* viewB.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
