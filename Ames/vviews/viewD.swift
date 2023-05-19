@@ -15,7 +15,7 @@ struct viewD: View {
             Image(systemName: "house")
                 .background(.thinMaterial)
                 .font(.system(size:200))
-        }.frame(width: 500, height: 900)
+        }.frame(width: 500)
     }
 }
 
