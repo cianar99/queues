@@ -38,7 +38,7 @@ struct viewA: View {
                     .fontWeight(.bold)
                     .padding(.vertical)
                     .frame(maxWidth: .infinity)
-                    .background(Color("yellow"))
+                    .background(Color("blue"))
                     .clipShape(Capsule())
             }
         }
@@ -132,8 +132,8 @@ struct DatePicker: View{
                     value in
                 CardView(value: value)
                         .background(Capsule()
-                            .fill(Color("black"))
-                        .padding(.horizontal,8)
+                            .fill(Color("blue"))
+                            .padding(.horizontal,0.5)
                         .opacity(isSameDay(date1: value.date, date2: currentDate) ? 1: 0 )).onTapGesture {
                             currentDate = value.date
                         }
@@ -189,7 +189,7 @@ struct DatePicker: View{
                             .frame(width: .infinity)*/
                         Text("\(value.day)")
                                             .font(.title3.bold())
-                                            .foregroundColor(isSameDay(date1: task.remindDate, date2: currentDate) ? Color("primary") : .primary)
+                                            .foregroundColor(isSameDay(date1: task.remindDate, date2: currentDate) ? Color("yellow") : .primary)
                                             .frame(width: .infinity)
 
                         
@@ -198,7 +198,7 @@ struct DatePicker: View{
                             .fill(isSameDay(date1: task.remindDate, date2: currentDate)? , Color("black"))
                                 .frame(width: 8, height: 8)*/
                         Circle()
-                                           .fill(isSameDay(date1: task.remindDate, date2: currentDate) ? Color("black") : Color.clear)
+                                           .fill(isSameDay(date1: task.remindDate, date2: currentDate) ? Color("blue") : Color.yellow)
                                            .frame(width: 8, height: 8)
                                   }
                     
@@ -206,7 +206,7 @@ struct DatePicker: View{
                                 Text("\(value.day)")
     .font(.title3.bold())
                                       
-    .foregroundColor(isSameDay(date1: value.date, date2: currentDate) ? Color("primary") : .primary)
+    .foregroundColor(isSameDay(date1: value.date, date2: currentDate) ? Color("yellow") : .primary)
 .frame(width: .infinity)
 
                                   
@@ -222,6 +222,7 @@ struct DatePicker: View{
             
         
     }
+    
     func isSameDay(date1: Date, date2: Date)->Bool{
         let calendar = Calendar.current
         return calendar.isDate(date1, inSameDayAs: date2)

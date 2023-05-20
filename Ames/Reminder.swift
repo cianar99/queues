@@ -47,8 +47,8 @@ var tasks : [ReminderDate] = [
        ], remindDate:getSampleDate(offset: 10)
     ),
     ReminderDate(remind:[
-        Reminder(title: "ebey")
-       ], remindDate:getSampleDate(offset: 26)
+        Reminder(title: "Suzzy's Birthday")
+       ], remindDate:getSampleDate(offset: 25)
     ),
     ReminderDate(remind:[
         Reminder(title: "eyaaaaan")
