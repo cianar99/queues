@@ -1,4 +1,5 @@
 
+//AMES-Achieve,Motivate,Excel,Succeed
 
 import SwiftUI
 
@@ -36,10 +37,15 @@ struct ContentView: View {
                     .tabItem(){
                         Image(systemName: "mic")
                     }
-                viewE()
+                ScrumView()
                     .tabItem(){
                         Image(systemName: "book")
                     }
+                /*transcribe()
+                    .tabItem(){
+                        Image(systemName: "book")
+                    }*/
+                                
             }.accentColor(.black)
                 .frame(width: 400, height: 870)
                 .background(.thinMaterial)

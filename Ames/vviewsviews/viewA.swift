@@ -24,6 +24,8 @@
 //    }
 //}
 
+//AMES-Achieve,Motivate,Excel,Succeed
+
 import SwiftUI
 
 struct viewA: View {

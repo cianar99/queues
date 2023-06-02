@@ -5,6 +5,7 @@
 //  Created by Ciana on 2/06/23.
 //
 
+//AMES-Achieve,Motivate,Excel,Succeed
 
 import SwiftUI
 
