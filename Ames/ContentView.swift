@@ -4,7 +4,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var timermode: Timermode = .initial
+   // @State var timermode: Timermode = .initial
     @State var selectedPickerIndex = 0
     
     let availableMinutes = Array(1...59)
@@ -32,19 +32,23 @@ struct ContentView: View {
                     .tabItem(){
                         Image(systemName: "clock")
                     }
-                viewC()
+                ViewC()
                     .tabItem(){
                         Image(systemName: "mic")
                     }
+                viewE()
+                    .tabItem(){
+                        Image(systemName: "book")
+                    }
             }.accentColor(.black)
-                .frame(width: 400, height: 800)
+                .frame(width: 400, height: 870)
                 .background(.thinMaterial)
             
             
             ZStack {
                 Color(red: /*@START_MENU_TOKEN@*/0.5/*@END_MENU_TOKEN@*/, green: /*@START_MENU_TOKEN@*/0.5/*@END_MENU_TOKEN@*/, blue: /*@START_MENU_TOKEN@*/0.5/*@END_MENU_TOKEN@*/)
             }
-            .frame(width: 500, height: 500)
+            .frame(width: 500, height: 570)
             .padding()
         }
     }

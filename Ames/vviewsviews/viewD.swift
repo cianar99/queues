@@ -2,8 +2,9 @@
 //  viewD.swift
 //  Ames
 //
-//  Created by Ciana on 12/05/23.
+//  Created by Ciana on 2/06/23.
 //
+
 
 import SwiftUI
 
@@ -32,14 +33,15 @@ struct Home : View{
                     .font(.title)
                     .fontWeight(.bold)
                 Text("building focus and concentration!!")
+                    
             }.foregroundColor(.black)
                 Spacer(minLength: 0)
                 
                 Button(action:{}){
-                    Image("logo")
+                    Image("logo1")
                         .resizable()
                     
-                        .frame(width:80,height:80)
+                        .frame(width:90,height:80)
                         .cornerRadius(15)
                     
                     
@@ -51,9 +53,9 @@ struct Home : View{
             // Course image
             Image("first1")
                 .resizable()
-                .frame(width: 320,height: 500)
+                .frame(width: 360,height: 530)
                 .padding()
-                .background(Color.black)
+                .background(Color("blue"))
                 .cornerRadius(15)
             
             Spacer()
@@ -61,13 +63,13 @@ struct Home : View{
             Button(action: {
                
             }, label: {
-                Text("Lesssgooooo")
+                Text("Let's Begin")
                     .font(.headline)
                     .fontWeight(.semibold)
                     .foregroundColor(.white)
                     .padding(.horizontal, 20)
                     .padding()
-                    .background(Color.black)
+                    .background(Color("blue"))
                     .cornerRadius(10)
                     .shadow(radius: 10)
             })
@@ -82,7 +84,7 @@ struct Home : View{
   
     
 
-struct CourseCardView : View{
+/*struct CourseCardView : View{
     var course : Course
     
     var body: some View{
@@ -116,5 +118,4 @@ struct Course : Identifiable{
 }
 var courses = [
     Course(name:"Lets get started", numCourse: 13, asset: "first1")
-]
-
+]*/

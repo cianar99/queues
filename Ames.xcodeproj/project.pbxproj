@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8588C4C72A263FBB007A41D9 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8588C4C62A263FBB007A41D9 /* MediaPlayer.framework */; };
 		85B744682A0E481500939A2C /* AmesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B744672A0E481500939A2C /* AmesApp.swift */; };
 		85B7446A2A0E481500939A2C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B744692A0E481500939A2C /* ContentView.swift */; };
 		85B7446C2A0E481700939A2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85B7446B2A0E481700939A2C /* Assets.xcassets */; };
@@ -16,9 +17,11 @@
 		85B7447B2A0E4B3300939A2C /* viewC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B7447A2A0E4B3300939A2C /* viewC.swift */; };
 		85B7447D2A0E4E6800939A2C /* viewD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B7447C2A0E4E6800939A2C /* viewD.swift */; };
 		85EC17A92A1639A800A94561 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EC17A82A1639A800A94561 /* Reminder.swift */; };
+		85F496102A271169001203C8 /* viewE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F4960F2A271169001203C8 /* viewE.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8588C4C62A263FBB007A41D9 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		85B744642A0E481500939A2C /* Ames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85B744672A0E481500939A2C /* AmesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmesApp.swift; sourceTree = "<group>"; };
 		85B744692A0E481500939A2C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -29,6 +32,9 @@
 		85B7447A2A0E4B3300939A2C /* viewC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewC.swift; sourceTree = "<group>"; };
 		85B7447C2A0E4E6800939A2C /* viewD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewD.swift; sourceTree = "<group>"; };
 		85EC17A82A1639A800A94561 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
+		85EC17B12A1CFDD400A94561 /* Audio recorder test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Audio recorder test.swift"; sourceTree = "<group>"; };
+		85EC17B22A1D009300A94561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		85F4960F2A271169001203C8 /* viewE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewE.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +42,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8588C4C72A263FBB007A41D9 /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8588C4C52A263FBA007A41D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8588C4C62A263FBB007A41D9 /* MediaPlayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		85B7445B2A0E481500939A2C = {
 			isa = PBXGroup;
 			children = (
 				85B744662A0E481500939A2C /* Ames */,
 				85B744652A0E481500939A2C /* Products */,
+				8588C4C52A263FBA007A41D9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,8 +77,8 @@
 		85B744662A0E481500939A2C /* Ames */ = {
 			isa = PBXGroup;
 			children = (
+				85EC17B22A1D009300A94561 /* Info.plist */,
 				85B744752A0E4AC900939A2C /* vviewsviews */,
-				85B744672A0E481500939A2C /* AmesApp.swift */,
 				85B744692A0E481500939A2C /* ContentView.swift */,
 				85B7446B2A0E481700939A2C /* Assets.xcassets */,
 				85B7446D2A0E481700939A2C /* Preview Content */,
@@ -86,6 +102,9 @@
 				85B744762A0E4B1100939A2C /* viewA.swift */,
 				85B744782A0E4B2300939A2C /* viewB.swift */,
 				85B7447A2A0E4B3300939A2C /* viewC.swift */,
+				85EC17B12A1CFDD400A94561 /* Audio recorder test.swift */,
+				85B744672A0E481500939A2C /* AmesApp.swift */,
+				85F4960F2A271169001203C8 /* viewE.swift */,
 			);
 			path = vviewsviews;
 			sourceTree = "<group>";
@@ -106,6 +125,8 @@
 			dependencies = (
 			);
 			name = Ames;
+			packageProductDependencies = (
+			);
 			productName = Ames;
 			productReference = 85B744642A0E481500939A2C /* Ames.app */;
 			productType = "com.apple.product-type.application";
@@ -134,6 +155,8 @@
 				Base,
 			);
 			mainGroup = 85B7445B2A0E481500939A2C;
+			packageReferences = (
+			);
 			productRefGroup = 85B744652A0E481500939A2C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -164,6 +187,7 @@
 				85B7447D2A0E4E6800939A2C /* viewD.swift in Sources */,
 				85B7447B2A0E4B3300939A2C /* viewC.swift in Sources */,
 				85B744772A0E4B1100939A2C /* viewA.swift in Sources */,
+				85F496102A271169001203C8 /* viewE.swift in Sources */,
 				85B744682A0E481500939A2C /* AmesApp.swift in Sources */,
 				85EC17A92A1639A800A94561 /* Reminder.swift in Sources */,
 				85B744792A0E4B2300939A2C /* viewB.swift in Sources */,
@@ -297,6 +321,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Ames/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Ames/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -325,6 +353,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Ames/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Ames/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

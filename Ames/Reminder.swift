@@ -25,6 +25,23 @@ func getSampleDate(offset: Int)-> Date {
     let date = calender.date(byAdding: .day, value: offset, to: Date())
     return date ?? Date()
 }
+func addTask(title: String, date: Date) {
+    let newReminder = Reminder(title: title)
+    var foundDate = false
+    
+    for index in 0..<tasks.count {
+        if tasks[index].remindDate == date {
+            tasks[index].remind.append(newReminder)
+            foundDate = true
+            break
+        }
+    }
+    
+    if !foundDate {
+        let newReminderDate = ReminderDate(remind: [newReminder], remindDate: date)
+        tasks.append(newReminderDate)
+    }
+}
 
 var tasks : [ReminderDate] = [
     ReminderDate(remind: [
@@ -59,3 +76,4 @@ var tasks : [ReminderDate] = [
        ], remindDate:getSampleDate(offset: 8)
     ),
 ]
+

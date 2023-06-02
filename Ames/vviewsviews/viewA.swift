@@ -2,8 +2,27 @@
 //  viewA.swift
 //  Ames
 //
-//  Created by Ciana on 12/05/23.
+//  Created by Ciana on 2/06/23.
 //
+//import SwiftUI
+////
+//struct viewA: View {
+//    var body: some View {
+//        ZStack{
+//            Color.gray
+//
+//            Image(systemName: "clock")
+//                .background(.thinMaterial)
+//                .font(.system(size:200))
+//        }.frame(width: 500, height: 900)
+//    }
+//}
+//
+//struct viewA_Previews: PreviewProvider {
+//    static var previews: some View {
+//        viewA()
+//    }
+//}
 
 import SwiftUI
 
@@ -21,6 +40,10 @@ struct viewA: View {
         
         HStack(spacing: 10) {
             Button(action: {
+                let taskTitle = "New Task"
+                   let taskDate = getSampleDate(offset: 5) // Replace with the desired date
+                   
+                   addTask(title: taskTitle, date: taskDate)
                 // Action for "Create new" button
             }) {
                 Text("Create new")
@@ -47,27 +70,7 @@ struct viewA: View {
         .foregroundColor(.white)
         
         
-        /* HStack{
-         Button(action: {
-         }, label: {
-         Text("Create new")
-         .fontWeight(.bold)
-         .padding(.vertical)
-         .frame(maxWidth: .infinity)
-         background(Color("blue"), in : Capsule())
-         })
-         Button(action: {
-         }, label: {
-         Text("Reminders")
-         .fontWeight(.bold)
-         .padding(.vertical)
-         .frame(maxWidth: .infinity)
-         background(Color("yellow"), in : Capsule())
-         })
-         }
-         .padding(.horizontal)
-         .padding(.top, 10)
-         .foregroundColor(.white)*/
+       
     }
     }
 }
@@ -179,14 +182,6 @@ struct DatePicker: View{
                         task in
                         return isSameDay(date1: task.remindDate, date2: value.date)
                     }){
-                        /*Text("\(value.day)")
-                            .font(.title3.bold())
-                            .foregroundColor(isSameDay(date1: task.remindDate, date2: currentDate)? Color("primary"): .primary)
-                            .frame(width: .infinity)*/
-                        /*Text("\(value.day)")
-                            .font(.title3.bold())
-                            .foregroundColor(isSameDay(date1: task.remindDate, date2: currentDate) ? .white : .primary)
-                            .frame(width: .infinity)*/
                         Text("\(value.day)")
                                             .font(.title3.bold())
                                             .foregroundColor(isSameDay(date1: task.remindDate, date2: currentDate) ? Color("yellow") : .primary)
@@ -194,9 +189,7 @@ struct DatePicker: View{
 
                         
                         Spacer()
-                       /* Circle()
-                            .fill(isSameDay(date1: task.remindDate, date2: currentDate)? , Color("black"))
-                                .frame(width: 8, height: 8)*/
+                     
                         Circle()
                                            .fill(isSameDay(date1: task.remindDate, date2: currentDate) ? Color("blue") : Color.yellow)
                                            .frame(width: 8, height: 8)
@@ -212,8 +205,7 @@ struct DatePicker: View{
                                   
 
                                       
-                                    /*.foregroundColor(isSameDay(date1: task.remindDate, date2: currentDate)? .white)
-                                    .frame(maxwidth: .infinity)*/
+                                  
         Spacer()
         }
         }
@@ -273,3 +265,5 @@ extension Date{
         }
     }
 }
+
+

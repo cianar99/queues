@@ -4,7 +4,6 @@
 //
 //  Created by Ciana on 12/05/23.
 //
-
 import SwiftUI
 
 @main
@@ -15,3 +14,4 @@ struct AmesApp: App {
         }
     }
 }
+
