@@ -83,39 +83,3 @@ struct Home : View{
     }
   
     
-
-/*struct CourseCardView : View{
-    var course : Course
-    
-    var body: some View{
-        VStack{
-           
-
-            Image(course.asset)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .padding(.top,10)
-                .padding(.leading,10)
-                .background(Color(course.asset))
-            HStack{
-                VStack(alignment:.leading, spacing: 10){
-                    Text("lets start")
-                        .fontWeight(.bold)
-                    
-                }
-            }
-        }
-        .background(Color.black)
-        .cornerRadius(15)
-    }
-}
-
-struct Course : Identifiable{
-    var id = UUID().uuidString
-    var name : String
-    var numCourse: Int
-    var asset: String
-}
-var courses = [
-    Course(name:"Lets get started", numCourse: 13, asset: "first1")
-]*/
