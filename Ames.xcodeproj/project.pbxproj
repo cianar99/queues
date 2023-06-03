@@ -34,6 +34,7 @@
 		8529E7792A2A97AB0000EB72 /* ScrumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8529E7782A2A97AB0000EB72 /* ScrumView.swift */; };
 		8536AEEE2A2A465E001BECA0 /* timerr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8536AEED2A2A465E001BECA0 /* timerr.swift */; };
 		8536AEF02A2A46A2001BECA0 /* timermanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8536AEEF2A2A46A2001BECA0 /* timermanager.swift */; };
+		8537E4CB2A2AD4E900C8978F /* Chatbot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8537E4CA2A2AD4E900C8978F /* Chatbot.swift */; };
 		854315E32A2A5532008BC6CC /* transcribe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854315E22A2A5532008BC6CC /* transcribe.swift */; };
 		8588C4C72A263FBB007A41D9 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8588C4C62A263FBB007A41D9 /* MediaPlayer.framework */; };
 		85B744682A0E481500939A2C /* AmesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B744672A0E481500939A2C /* AmesApp.swift */; };
@@ -76,6 +77,7 @@
 		8529E7782A2A97AB0000EB72 /* ScrumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumView.swift; sourceTree = "<group>"; };
 		8536AEED2A2A465E001BECA0 /* timerr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timerr.swift; sourceTree = "<group>"; };
 		8536AEEF2A2A46A2001BECA0 /* timermanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timermanager.swift; sourceTree = "<group>"; };
+		8537E4CA2A2AD4E900C8978F /* Chatbot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chatbot.swift; sourceTree = "<group>"; };
 		854315E22A2A5532008BC6CC /* transcribe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transcribe.swift; sourceTree = "<group>"; };
 		8588C4C62A263FBB007A41D9 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		85B744642A0E481500939A2C /* Ames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ames.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -164,6 +166,7 @@
 				8529E73F2A2A8EC00000EB72 /* Resources */,
 				85B7446B2A0E481700939A2C /* Assets.xcassets */,
 				85B7446D2A0E481700939A2C /* Preview Content */,
+				8537E4CA2A2AD4E900C8978F /* Chatbot.swift */,
 			);
 			path = Ames;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				8529E7722A2A94480000EB72 /* ScrumStore.swift in Sources */,
 				8529E7792A2A97AB0000EB72 /* ScrumView.swift in Sources */,
 				8529E7742A2A94480000EB72 /* ErrorWrapper.swift in Sources */,
+				8537E4CB2A2AD4E900C8978F /* Chatbot.swift in Sources */,
 				85B7446A2A0E481500939A2C /* ContentView.swift in Sources */,
 				8529E7702A2A94480000EB72 /* AVPlayer+Ding.swift in Sources */,
 				8529E7752A2A94480000EB72 /* DailyScrum.swift in Sources */,

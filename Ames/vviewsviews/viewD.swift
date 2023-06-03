@@ -33,7 +33,7 @@ struct Home : View{
                 Text("AMES")
                     .font(.title)
                     .fontWeight(.bold)
-                Text("building focus and concentration!!")
+                Text("Achieve, Motivate, Excell, Success")
                     
             }.foregroundColor(.black)
                 Spacer(minLength: 0)

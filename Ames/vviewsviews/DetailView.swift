@@ -16,7 +16,7 @@ struct DetailView: View {
                 NavigationLink(destination: MeetingView(scrum: $scrum)) {
                     Label("Start Meeting", systemImage: "timer")
                         .font(.headline)
-                        .foregroundColor(.accentColor)
+                        .foregroundColor(Color("blue"))
                 }
                 HStack {
                     Label("Length", systemImage: "clock")
